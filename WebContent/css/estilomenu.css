@@ -1,0 +1,115 @@
+/** CSS para estilizar o menu lateral & seus icones**/
+
+@font-face {
+    font-family: 'Tahoma';
+    src: url("../fontes/Tahoma.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+.cbp-vimenu {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    height: 95%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background: rgb(22, 23, 24);
+}
+
+.cbp-vimenu li a {
+    display: block;
+    text-indent: -500em;
+    height: 5em;
+    width: 5em;
+    line-height: 5em;
+    text-align: center;
+    color: #999;
+    position: relative;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+    -webkit-transition: background 0.1s ease-in-out;
+    -moz-transition: background 0.1s ease-in-out;
+    transition: background 0.1s ease-in-out;
+}
+
+.cbp-vimenu li a:hover,
+.cbp-vimenu li:first-child a {
+    background: rgb(240, 234, 234);
+    color: #fff;
+}
+
+
+/* class for current item */
+
+.cbp-vimenu li.cbp-vicurrent a {
+    background: #fff;
+    color: #47a3da;
+}
+
+.cbp-vimenu li a:before {
+    font-family: 'Tahoma';
+    font-style: normal;
+    font-weight: normal;
+    text-indent: 0em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 101%;
+    font-size: 1.4em;
+    -webkit-font-smoothing: antialiased;
+}
+
+.cbp-vimenu li a.icone-logo:before {
+    background: rgb(47, 79, 79);
+    content: "Menu";
+    font-weight: 300;
+    font-size: 150%;
+    font-family: 'Tahoma', Calibri, Arial, sans-serif;
+}
+
+.icone-estoque::before {
+    content: url("../imagens/painel/produto-contabilidade.png");
+    padding-top: 15px;
+}
+
+.icone-alerta::before {
+    content: url("../imagens/painel/alerta-triangulo.png");
+    padding-top: 10px;
+}
+
+.icone-icone::before {
+    /*content: url("../imagens/imagens/icones/painel/");*/
+    padding-top: 15px;
+    content: "Definir";
+}
+
+.icone-suporte::before {
+    content: url("../imagens/painel/suporte-computador.png");
+    padding-top: 15px;
+}
+
+.icone-usuario::before {
+    content: url("../imagens/painel/usuario-filled.png");
+    padding-top: 15px;
+}
+
+.icone-logout::before {
+    content: url("../imagens/painel/logout-retangulo.png");
+    padding-top: 15px;
+}
+
+.icone-fim {
+    background: rgb(255, 255, 255);
+}
+
+
+/* Example for media query (depends on total height of menu) */
+
+@media screen and (max-height: 34.9375em) {
+    .cbp-vimenu {
+        font-size: 70%;
+    }
+}

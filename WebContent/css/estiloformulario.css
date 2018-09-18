@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'MinhaFonte';
+	src: url(fontes/arial.ttf);
+	font-family: 'FonteSlogan';
+	src: url(fontes/TitilliumWeb-SemiBold.ttf);
+	font-family: 'Tahoma';
+	src: url("fontes/Tahoma.ttf");
+}
+
+body {
+	/* COLOCA A IMAGEM NO FUNDO*/
+	background: url("../imagens/fundo.jpg");
+}
+
+div#formulario {
+	font-family: 'FonteSlogan' sans-serif;
+	background-color: rgb(47, 79, 79); /* SETA A COR DO FUNDO DO DIV*/
+	font-size: 16pt;
+	position: absolute; /* SETA A POSIÇÃO DO DIV*/
+	left: 50%;
+	top: 50%;
+	margin-left: -160px; /* SETA A MARGEM ESQUERDA PARA O DIV*/
+	margin-top: -110px; /* SETA A MARGEM SUPERIOR PARA O DIV*/
+	width: 340px; /* TAMANHO DESTE DIV*/
+	align-content: center;
+	/* SETA O ALINHAMENTO, O DIV FICARÁ NO MEIO DA TELA*/
+	padding: 20px;
+	position: absolute;
+	position: absolute;
+}
+
+fieldset#bordaformulario {
+	font-family: 'FonteSlogan' sans-serif;
+	font-size: 16pt;
+	color: rgb(255, 255, 255); /* COR PARA AS BORDAS*/
+}
+
+a {
+	color: rgb(255, 255, 255); /* COR DO LINK PARA RECUPERAR SENHA */
+}
