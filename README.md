@@ -7,3 +7,7 @@ Desenvolvedores:
 - José Luiz
 - Plácido Neves
 - Reinaldo Ramos
+
+#Funcionalidades:
+* Cadastro de produtos de estoque visando controlar a entrada e saída de tais produtos.
+* Alteração e/ou exclusão de tais produtos, facilitando o controle
