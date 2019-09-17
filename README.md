@@ -12,4 +12,4 @@ Versão 1 do Site (em java WEB) do controle de estoque do VendasNSoft
 * Cadastro de produtos de estoque visando controlar a entrada e saída de tais produtos.
 * Alteração e/ou exclusão de tais produtos, facilitando o controle
 
-*Baseado no sistema desktop VendasNSoft desenvolvido em Java.
+* Baseado no sistema desktop VendasNSoft desenvolvido em Java.
